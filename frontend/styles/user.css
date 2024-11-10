@@ -1,0 +1,220 @@
+/* Estilos básicos del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2c5;
+}
+
+/* Estilos del encabezado */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #333;
+    padding: 10px 20px;
+    /* Reduce el padding para más espacio */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del contenedor del mensaje de bienvenida */
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo del mensaje de bienvenida */
+#welcomeMessage {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo del enlace "Registrar usuario" */
+.register-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 0.3s, text-decoration 0.3s;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.register-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/*Estilos del botón de log out */
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+/* Estilos del contenedor principal */
+main {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos busqueda contenedor */
+.search-container {
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px;
+}
+
+/* Estilo del campo de búsqueda */
+#searchInput {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-right: 120px;
+}
+
+/* Estilo del botón de búsqueda */
+.searchBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del contenedor de autocompletado */
+#autocompleteList {
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 20px);
+    max-width: calc(100% - 110px);
+    overflow-y: auto;
+    position: absolute;
+    display: none;
+}
+
+/* Estilo de los ítems en la lista de autocompletado */
+#autocompleteList li {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+#autocompleteList li:hover {
+    color: #007bff;
+}
+
+#searchInput:focus+#autocompleteList,
+#searchInput:not(:placeholder-shown)+#autocompleteList {
+    display: block;
+}
+
+/* Estilos para el formulario con los datos del empleado */
+#empleadoFormContainer {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#empleadoFormContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#empleadoFormContainer label {
+    font-size: 14px;
+    color: #555;
+}
+
+#empleadoFormContainer input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#empleadoFormContainer .buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#empleadoFormContainer .buttons button {
+    padding: 15px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+#empleadoFormContainer .buttons .modify-btn {
+    background-color: #4CAF50;
+}
+
+#empleadoFormContainer .buttons .modify-btn:hover {
+    background-color: #39803b;
+}
+
+#empleadoFormContainer .buttons .delete-btn {
+    background-color: #f44336;
+}
+
+#empleadoFormContainer .buttons .delete-btn:hover {
+    background-color: #d02216;
+}
+
+#empleadoFormContainer .buttons .cancel-btn {
+    background-color: #808080;
+}
+
+#empleadoFormContainer .buttons .cancel-btn:hover {
+    background-color: #585858;
+}

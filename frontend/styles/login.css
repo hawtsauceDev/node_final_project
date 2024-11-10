@@ -1,0 +1,88 @@
+/* Resetear estilos */
+body,
+h2,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos del cuerpo de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2b5;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del contenedor */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    border: 3px solid #ddd;
+}
+
+/* Estilo título contenedor */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilo labels */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Estilo de los botones */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Estilo de boton de ingresar y registro */
+.login-button {
+    background-color: green;
+    color: white;
+}
+
+.register-button {
+    background-color: blue;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: darkgreen;
+}
+
+.register-button:hover {    
+    background-color: darkblue;
+}
